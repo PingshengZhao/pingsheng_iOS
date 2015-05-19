@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9573D8A11B0B0392000AA9BE /* PSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9573D89E1B0B0392000AA9BE /* PSCollectionViewCell.m */; };
+		9573D8A21B0B0392000AA9BE /* PSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9573D8A01B0B0392000AA9BE /* PSScrollView.m */; };
 		95FFD4AC1AF1D15800C51E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FFD4AB1AF1D15800C51E30 /* main.m */; };
 		95FFD4AF1AF1D15800C51E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FFD4AE1AF1D15800C51E30 /* AppDelegate.m */; };
 		95FFD4B21AF1D15800C51E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FFD4B11AF1D15800C51E30 /* ViewController.m */; };
 		95FFD4B71AF1D15900C51E30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FFD4B61AF1D15900C51E30 /* Images.xcassets */; };
 		95FFD4BA1AF1D15900C51E30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95FFD4B81AF1D15900C51E30 /* LaunchScreen.xib */; };
 		95FFD4C61AF1D15900C51E30 /* LoopsSrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FFD4C51AF1D15900C51E30 /* LoopsSrollViewTests.m */; };
-		95FFD4D11AF1D35300C51E30 /* PSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FFD4D01AF1D35300C51E30 /* PSScrollView.m */; };
-		95FFD4E61AF1DEFA00C51E30 /* PSCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FFD4E51AF1DEFA00C51E30 /* PSCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9573D89D1B0B0392000AA9BE /* PSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCollectionViewCell.h; sourceTree = "<group>"; };
+		9573D89E1B0B0392000AA9BE /* PSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCollectionViewCell.m; sourceTree = "<group>"; };
+		9573D89F1B0B0392000AA9BE /* PSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScrollView.h; sourceTree = "<group>"; };
+		9573D8A01B0B0392000AA9BE /* PSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScrollView.m; sourceTree = "<group>"; };
 		95FFD4A61AF1D15800C51E30 /* LoopsSrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopsSrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FFD4AA1AF1D15800C51E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95FFD4AB1AF1D15800C51E30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,10 +44,6 @@
 		95FFD4BF1AF1D15900C51E30 /* LoopsSrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopsSrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FFD4C41AF1D15900C51E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95FFD4C51AF1D15900C51E30 /* LoopsSrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopsSrollViewTests.m; sourceTree = "<group>"; };
-		95FFD4CF1AF1D35300C51E30 /* PSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScrollView.h; sourceTree = "<group>"; };
-		95FFD4D01AF1D35300C51E30 /* PSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScrollView.m; sourceTree = "<group>"; };
-		95FFD4E41AF1DEFA00C51E30 /* PSCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCollectionViewCell.h; sourceTree = "<group>"; };
-		95FFD4E51AF1DEFA00C51E30 /* PSCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9573D89C1B0B0392000AA9BE /* PSScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9573D89F1B0B0392000AA9BE /* PSScrollView.h */,
+				9573D8A01B0B0392000AA9BE /* PSScrollView.m */,
+				9573D89D1B0B0392000AA9BE /* PSCollectionViewCell.h */,
+				9573D89E1B0B0392000AA9BE /* PSCollectionViewCell.m */,
+			);
+			path = PSScrollView;
+			sourceTree = "<group>";
+		};
 		95FFD49D1AF1D15800C51E30 = {
 			isa = PBXGroup;
 			children = (
@@ -85,14 +96,11 @@
 		95FFD4A81AF1D15800C51E30 /* LoopsSrollView */ = {
 			isa = PBXGroup;
 			children = (
+				9573D89C1B0B0392000AA9BE /* PSScrollView */,
 				95FFD4AD1AF1D15800C51E30 /* AppDelegate.h */,
 				95FFD4AE1AF1D15800C51E30 /* AppDelegate.m */,
 				95FFD4B01AF1D15800C51E30 /* ViewController.h */,
 				95FFD4B11AF1D15800C51E30 /* ViewController.m */,
-				95FFD4CF1AF1D35300C51E30 /* PSScrollView.h */,
-				95FFD4D01AF1D35300C51E30 /* PSScrollView.m */,
-				95FFD4E41AF1DEFA00C51E30 /* PSCollectionViewCell.h */,
-				95FFD4E51AF1DEFA00C51E30 /* PSCollectionViewCell.m */,
 				95FFD4B61AF1D15900C51E30 /* Images.xcassets */,
 				95FFD4B81AF1D15900C51E30 /* LaunchScreen.xib */,
 				95FFD4A91AF1D15800C51E30 /* Supporting Files */,
@@ -227,9 +235,9 @@
 			files = (
 				95FFD4B21AF1D15800C51E30 /* ViewController.m in Sources */,
 				95FFD4AF1AF1D15800C51E30 /* AppDelegate.m in Sources */,
-				95FFD4D11AF1D35300C51E30 /* PSScrollView.m in Sources */,
 				95FFD4AC1AF1D15800C51E30 /* main.m in Sources */,
-				95FFD4E61AF1DEFA00C51E30 /* PSCollectionViewCell.m in Sources */,
+				9573D8A11B0B0392000AA9BE /* PSCollectionViewCell.m in Sources */,
+				9573D8A21B0B0392000AA9BE /* PSScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
