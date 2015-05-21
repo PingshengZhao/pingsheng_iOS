@@ -21,7 +21,7 @@
 
 @implementation PSScrollView
 
-+ (instancetype)psScrollViewWithFrame:(CGRect)frame imagesGroup:(NSArray *)imagesGroup timeInterval:(NSTimeInterval)timeInterval completion:(UICollectionViewDidSelectItemAtIndexPathForRow)completion{
++ (instancetype)psScrollViewWithFrame:(CGRect)frame imagesGroup:(NSArray *)imagesGroup timeInterval:(NSTimeInterval)timeInterval completion:(UICollectionViewDidSelectItemAtIndexPathForRow)completion {
     PSScrollView * psScrollView = [[PSScrollView alloc] initWithFrame:frame];
     NSMutableArray * mutableArray = [NSMutableArray arrayWithArray:imagesGroup];
     [mutableArray insertObject:[imagesGroup lastObject] atIndex:0];
@@ -35,8 +35,7 @@
     return psScrollView;
 }
 
-- (void)setupMainView
-{
+- (void)setupMainView {
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.itemSize = self.frame.size;
     flowLayout.minimumLineSpacing = 0;
@@ -65,16 +64,16 @@
     [self addSubview:_pageControl];
 }
 
-- (void)layoutSubviews{
+- (void)layoutSubviews {
     [super layoutSubviews];
     _mainView.frame = self.bounds;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return _imagesGroup.count;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PSCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:KIdentifier forIndexPath:indexPath];
     cell.imageView.image = [UIImage imageNamed:_imagesGroup[indexPath.row]];
     return cell;
@@ -90,10 +89,9 @@
         index = indexPath.row;
     }
     _callBack(index);
-    
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     int contentOffsetX = scrollView.contentOffset.x;
     if ((contentOffsetX / scrollView.frame.size.width) < 0 && contentOffsetX < scrollView.frame.size.width) {
         [scrollView setContentOffset:CGPointMake(_mainView.frame.size.width * (_imagesGroup.count - 2), 0) animated:NO];
@@ -108,11 +106,9 @@
     }else {
         _pageControl.currentPage = (contentOffsetX / scrollView.frame.size.width) - 1;
     }
-
 }
 
-- (void)setupTimer
-{
+- (void)setupTimer {
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:_timeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
     _timer = timer;
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
@@ -126,17 +122,14 @@
         [_mainView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:1 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
     }
     [_mainView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:targetIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
-    
 }
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [_timer invalidate];
     _timer = nil;
 }
 
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     [self setupTimer];
 }
 
