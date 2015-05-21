@@ -12,7 +12,6 @@
 
 @interface PSScrollView ()<UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 @property (nonatomic, weak) UICollectionView *mainView;
-@property (nonatomic, weak) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong)NSArray * imagesGroup;
 @property (nonatomic, strong)UIPageControl * pageControl;
 @property (nonatomic, strong)NSTimer *timer;
@@ -40,7 +39,6 @@
     flowLayout.itemSize = self.frame.size;
     flowLayout.minimumLineSpacing = 0;
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    _flowLayout = flowLayout;
     
     UICollectionView *mainView = [[UICollectionView alloc] initWithFrame:self.frame collectionViewLayout:flowLayout];
     mainView.backgroundColor = [UIColor lightGrayColor];
