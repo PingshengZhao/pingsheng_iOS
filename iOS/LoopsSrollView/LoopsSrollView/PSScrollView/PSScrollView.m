@@ -16,17 +16,19 @@
 @property (nonatomic, strong)UIPageControl * pageControl;
 @property (nonatomic, strong)NSTimer *timer;
 @property (nonatomic, strong)UICollectionViewDidSelectItemAtIndexPathForRow callBack;
+@property (nonatomic, assign)NSTimeInterval timeInterval;
 @end
 
 @implementation PSScrollView
 
-+ (instancetype)psScrollViewWithFrame:(CGRect)frame imagesGroup:(NSArray *)imagesGroup completion:(UICollectionViewDidSelectItemAtIndexPathForRow)completion{
++ (instancetype)psScrollViewWithFrame:(CGRect)frame imagesGroup:(NSArray *)imagesGroup timeInterval:(NSTimeInterval)timeInterval completion:(UICollectionViewDidSelectItemAtIndexPathForRow)completion{
     PSScrollView * psScrollView = [[PSScrollView alloc] initWithFrame:frame];
     NSMutableArray * mutableArray = [NSMutableArray arrayWithArray:imagesGroup];
     [mutableArray insertObject:[imagesGroup lastObject] atIndex:0];
     [mutableArray addObject:[imagesGroup firstObject]];
     psScrollView.imagesGroup = [mutableArray copy];
     psScrollView.callBack = completion;
+    psScrollView.timeInterval = timeInterval;
     [psScrollView setupMainView];
     [psScrollView setupPageControl];
     [psScrollView setupTimer];
@@ -111,7 +113,7 @@
 
 - (void)setupTimer
 {
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:_timeInterval target:self selector:@selector(automaticScroll) userInfo:nil repeats:YES];
     _timer = timer;
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }

@@ -11,5 +11,5 @@ typedef void (^UICollectionViewDidSelectItemAtIndexPathForRow)(NSInteger index);
 #define kScreeHeight ([UIScreen mainScreen].bounds.size.height)
 #define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
 @interface PSScrollView : UIView
-+ (instancetype)psScrollViewWithFrame:(CGRect)frame imagesGroup:(NSArray *)imagesGroup completion:(UICollectionViewDidSelectItemAtIndexPathForRow)completion;
++ (instancetype)psScrollViewWithFrame:(CGRect)frame imagesGroup:(NSArray *)imagesGroup timeInterval:(NSTimeInterval)timeInterval completion:(UICollectionViewDidSelectItemAtIndexPathForRow)completion;
 @end
