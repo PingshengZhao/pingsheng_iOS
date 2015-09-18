@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95B211141BABA42F00644250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211131BABA42F00644250 /* main.m */; };
+		95B211171BABA42F00644250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211161BABA42F00644250 /* AppDelegate.m */; };
+		95B2111A1BABA42F00644250 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211191BABA42F00644250 /* ViewController.m */; };
+		95B2111F1BABA42F00644250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B2111E1BABA42F00644250 /* Assets.xcassets */; };
+		95B211221BABA42F00644250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B211201BABA42F00644250 /* LaunchScreen.storyboard */; };
+		95B2112D1BABA43000644250 /* PSIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2112C1BABA43000644250 /* PSIMTests.m */; };
+		95B211381BABA43000644250 /* PSIMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211371BABA43000644250 /* PSIMUITests.m */; };
+		DBADE4F5D50910A551A00B6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF3D2E8F360C9045F38E32E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95B211291BABA43000644250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95B211071BABA42F00644250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95B2110E1BABA42F00644250;
+			remoteInfo = PSIM;
+		};
+		95B211341BABA43000644250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95B211071BABA42F00644250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95B2110E1BABA42F00644250;
+			remoteInfo = PSIM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0120C9CA17ADC6B5840458D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		39261916E6A94BEB515E4A55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		95B2110F1BABA42F00644250 /* PSIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B211131BABA42F00644250 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95B211151BABA42F00644250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95B211161BABA42F00644250 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95B211181BABA42F00644250 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		95B211191BABA42F00644250 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		95B2111E1BABA42F00644250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95B211211BABA42F00644250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95B211231BABA42F00644250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B211281BABA43000644250 /* PSIMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSIMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B2112C1BABA43000644250 /* PSIMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSIMTests.m; sourceTree = "<group>"; };
+		95B2112E1BABA43000644250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B211331BABA43000644250 /* PSIMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSIMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B211371BABA43000644250 /* PSIMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSIMUITests.m; sourceTree = "<group>"; };
+		95B211391BABA43000644250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF3D2E8F360C9045F38E32E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95B2110C1BABA42F00644250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBADE4F5D50910A551A00B6A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B211251BABA43000644250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B211301BABA43000644250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		804E761A00233092BCA852BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3D2E8F360C9045F38E32E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95B211061BABA42F00644250 = {
+			isa = PBXGroup;
+			children = (
+				95B211111BABA42F00644250 /* PSIM */,
+				95B2112B1BABA43000644250 /* PSIMTests */,
+				95B211361BABA43000644250 /* PSIMUITests */,
+				95B211101BABA42F00644250 /* Products */,
+				F3C9E3B1C6A42CFBAF6512B0 /* Pods */,
+				804E761A00233092BCA852BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95B211101BABA42F00644250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95B2110F1BABA42F00644250 /* PSIM.app */,
+				95B211281BABA43000644250 /* PSIMTests.xctest */,
+				95B211331BABA43000644250 /* PSIMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95B211111BABA42F00644250 /* PSIM */ = {
+			isa = PBXGroup;
+			children = (
+				95B211151BABA42F00644250 /* AppDelegate.h */,
+				95B211161BABA42F00644250 /* AppDelegate.m */,
+				95B211181BABA42F00644250 /* ViewController.h */,
+				95B211191BABA42F00644250 /* ViewController.m */,
+				95B2111E1BABA42F00644250 /* Assets.xcassets */,
+				95B211201BABA42F00644250 /* LaunchScreen.storyboard */,
+				95B211231BABA42F00644250 /* Info.plist */,
+				95B211121BABA42F00644250 /* Supporting Files */,
+			);
+			path = PSIM;
+			sourceTree = "<group>";
+		};
+		95B211121BABA42F00644250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95B211131BABA42F00644250 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95B2112B1BABA43000644250 /* PSIMTests */ = {
+			isa = PBXGroup;
+			children = (
+				95B2112C1BABA43000644250 /* PSIMTests.m */,
+				95B2112E1BABA43000644250 /* Info.plist */,
+			);
+			path = PSIMTests;
+			sourceTree = "<group>";
+		};
+		95B211361BABA43000644250 /* PSIMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95B211371BABA43000644250 /* PSIMUITests.m */,
+				95B211391BABA43000644250 /* Info.plist */,
+			);
+			path = PSIMUITests;
+			sourceTree = "<group>";
+		};
+		F3C9E3B1C6A42CFBAF6512B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39261916E6A94BEB515E4A55 /* Pods.debug.xcconfig */,
+				0120C9CA17ADC6B5840458D5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95B2110E1BABA42F00644250 /* PSIM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B2113C1BABA43000644250 /* Build configuration list for PBXNativeTarget "PSIM" */;
+			buildPhases = (
+				38DFACBEFE7D6AFC84FE27BC /* Check Pods Manifest.lock */,
+				95B2110B1BABA42F00644250 /* Sources */,
+				95B2110C1BABA42F00644250 /* Frameworks */,
+				95B2110D1BABA42F00644250 /* Resources */,
+				8A2999FDBAA354A4560D4639 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSIM;
+			productName = PSIM;
+			productReference = 95B2110F1BABA42F00644250 /* PSIM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95B211271BABA43000644250 /* PSIMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B2113F1BABA43000644250 /* Build configuration list for PBXNativeTarget "PSIMTests" */;
+			buildPhases = (
+				95B211241BABA43000644250 /* Sources */,
+				95B211251BABA43000644250 /* Frameworks */,
+				95B211261BABA43000644250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95B2112A1BABA43000644250 /* PBXTargetDependency */,
+			);
+			name = PSIMTests;
+			productName = PSIMTests;
+			productReference = 95B211281BABA43000644250 /* PSIMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95B211321BABA43000644250 /* PSIMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95B211421BABA43000644250 /* Build configuration list for PBXNativeTarget "PSIMUITests" */;
+			buildPhases = (
+				95B2112F1BABA43000644250 /* Sources */,
+				95B211301BABA43000644250 /* Frameworks */,
+				95B211311BABA43000644250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95B211351BABA43000644250 /* PBXTargetDependency */,
+			);
+			name = PSIMUITests;
+			productName = PSIMUITests;
+			productReference = 95B211331BABA43000644250 /* PSIMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95B211071BABA42F00644250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = pingsheng.zhao;
+				TargetAttributes = {
+					95B2110E1BABA42F00644250 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					95B211271BABA43000644250 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 95B2110E1BABA42F00644250;
+					};
+					95B211321BABA43000644250 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 95B2110E1BABA42F00644250;
+					};
+				};
+			};
+			buildConfigurationList = 95B2110A1BABA42F00644250 /* Build configuration list for PBXProject "PSIM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95B211061BABA42F00644250;
+			productRefGroup = 95B211101BABA42F00644250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95B2110E1BABA42F00644250 /* PSIM */,
+				95B211271BABA43000644250 /* PSIMTests */,
+				95B211321BABA43000644250 /* PSIMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95B2110D1BABA42F00644250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B211221BABA42F00644250 /* LaunchScreen.storyboard in Resources */,
+				95B2111F1BABA42F00644250 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B211261BABA43000644250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B211311BABA43000644250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38DFACBEFE7D6AFC84FE27BC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A2999FDBAA354A4560D4639 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95B2110B1BABA42F00644250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B2111A1BABA42F00644250 /* ViewController.m in Sources */,
+				95B211171BABA42F00644250 /* AppDelegate.m in Sources */,
+				95B211141BABA42F00644250 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B211241BABA43000644250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B2112D1BABA43000644250 /* PSIMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B2112F1BABA43000644250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B211381BABA43000644250 /* PSIMUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95B2112A1BABA43000644250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95B2110E1BABA42F00644250 /* PSIM */;
+			targetProxy = 95B211291BABA43000644250 /* PBXContainerItemProxy */;
+		};
+		95B211351BABA43000644250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95B2110E1BABA42F00644250 /* PSIM */;
+			targetProxy = 95B211341BABA43000644250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95B211201BABA42F00644250 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95B211211BABA42F00644250 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95B2113A1BABA43000644250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95B2113B1BABA43000644250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95B2113D1BABA43000644250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39261916E6A94BEB515E4A55 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PSIM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.PSIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95B2113E1BABA43000644250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0120C9CA17ADC6B5840458D5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PSIM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.PSIM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		95B211401BABA43000644250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PSIMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.PSIMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSIM.app/PSIM";
+			};
+			name = Debug;
+		};
+		95B211411BABA43000644250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PSIMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.PSIMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSIM.app/PSIM";
+			};
+			name = Release;
+		};
+		95B211431BABA43000644250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PSIMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.PSIMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PSIM;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		95B211441BABA43000644250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PSIMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.PSIMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PSIM;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95B2110A1BABA42F00644250 /* Build configuration list for PBXProject "PSIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B2113A1BABA43000644250 /* Debug */,
+				95B2113B1BABA43000644250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B2113C1BABA43000644250 /* Build configuration list for PBXNativeTarget "PSIM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B2113D1BABA43000644250 /* Debug */,
+				95B2113E1BABA43000644250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B2113F1BABA43000644250 /* Build configuration list for PBXNativeTarget "PSIMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B211401BABA43000644250 /* Debug */,
+				95B211411BABA43000644250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95B211421BABA43000644250 /* Build configuration list for PBXNativeTarget "PSIMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95B211431BABA43000644250 /* Debug */,
+				95B211441BABA43000644250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95B211071BABA42F00644250 /* Project object */;
+}
