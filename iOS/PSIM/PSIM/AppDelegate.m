@@ -21,6 +21,20 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] initWithDisplayConversationTypes:@[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION), @(ConversationType_APPSERVICE), @(ConversationType_PUBLICSERVICE),@(ConversationType_GROUP),@(ConversationType_SYSTEM)] collectionConversationType:@[@(ConversationType_GROUP),@(ConversationType_DISCUSSION)]]];
+    /**
+     *  连接服务器
+     *
+     *
+     *
+     *
+     */
+    [[RCIM sharedRCIM] connectWithToken:@"FyEvpWavwh2ttbI7/omnkeJxv2FgAAsNM8WP+bgUj/oPyrhKrr4xvmyDrP6WPJrCHL9Sc/oo3f6jWrKgPW17pw==" success:^(NSString *userId) {
+        NSLog(@"连接成功 ID=%@", userId);
+    } error:^(RCConnectErrorCode status) {
+        NSLog(@"失败%ld",(long)status);
+    } tokenIncorrect:^{
+        
+    }];
     nav.navigationBar.translucent = NO;
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
