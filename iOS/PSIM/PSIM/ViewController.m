@@ -17,7 +17,18 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.conversationListTableView.tableFooterView = [UIView new];
-    
+    [[RCIM sharedRCIM] connectWithToken:@"FyEvpWavwh2ttbI7/omnkeJxv2FgAAsNM8WP+bgUj/oPyrhKrr4xvmyDrP6WPJrCHL9Sc/oo3f6jWrKgPW17pw==" success:^(NSString *userId) {
+//        RCConversationViewController * conversationVC = [[RCConversationViewController alloc] init];
+//        conversationVC.conversationType = ConversationType_PRIVATE;
+//        conversationVC.targetId = @"zps";
+//        conversationVC.userName = @"zpa";
+//        conversationVC.title = @"聊天";
+//        [self.navigationController pushViewController:conversationVC animated:YES];
+    } error:^(RCConnectErrorCode status) {
+        NSLog(@"失败%ld",(long)status);
+    } tokenIncorrect:^{
+        
+    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

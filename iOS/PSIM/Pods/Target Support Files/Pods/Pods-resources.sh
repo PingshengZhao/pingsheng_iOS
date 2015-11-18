@@ -58,21 +58,21 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/RongCloud.bundle"
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/en.lproj"
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/zh-Hans.lproj"
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/Emoji.plist"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/RongCloud.bundle"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/en.lproj"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/zh-Hans.lproj"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/Emoji.plist"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/RongCloud.bundle"
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/en.lproj"
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/zh-Hans.lproj"
-  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2.2.8/Emoji.plist"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/RongCloud.bundle"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/en.lproj"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/zh-Hans.lproj"
+  install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_3_7_stable/Emoji.plist"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
-if [[ "${ACTION}" == "install" ]]; then
+if [[ "${ACTION}" == "install" ]] && [[ "${SKIP_INSTALL}" == "NO" ]]; then
   mkdir -p "${INSTALL_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
   rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${INSTALL_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 fi
