@@ -13,7 +13,7 @@
 		953856061CBC93EC00191088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953856041CBC93EC00191088 /* LaunchScreen.storyboard */; };
 		953856111CBC93EC00191088 /* LessonSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953856101CBC93EC00191088 /* LessonSwiftTests.swift */; };
 		9538561C1CBC93EC00191088 /* LessonSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9538561B1CBC93EC00191088 /* LessonSwiftUITests.swift */; };
-		F486B86AF053E23FB16EEC14 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0EBA7F610592ABA67966FF6 /* Pods.framework */; };
+		FF5C0FA0A02936A1E27224D5 /* Pods_LessonSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ECFEA07E43D8A4BD7B2B08 /* Pods_LessonSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		087EC4F88BF78796028D4002 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2A418F156E57A51AA08DEAE5 /* Pods-LessonSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LessonSwift/Pods-LessonSwift.release.xcconfig"; sourceTree = "<group>"; };
+		56ECFEA07E43D8A4BD7B2B08 /* Pods_LessonSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LessonSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D659AF257285E87AE60E787 /* Pods-LessonSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LessonSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LessonSwift/Pods-LessonSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		953855F81CBC93EC00191088 /* LessonSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		953855FB1CBC93EC00191088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953855FD1CBC93EC00191088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +49,6 @@
 		953856171CBC93EC00191088 /* LessonSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LessonSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9538561B1CBC93EC00191088 /* LessonSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonSwiftUITests.swift; sourceTree = "<group>"; };
 		9538561D1CBC93EC00191088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E7AC2321C2A53E6C9F1C129 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D0EBA7F610592ABA67966FF6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F486B86AF053E23FB16EEC14 /* Pods.framework in Frameworks */,
+				FF5C0FA0A02936A1E27224D5 /* Pods_LessonSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +78,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C19A7B23B71066A364A58C6 /* Pods */ = {
+		4B9F886C7D86175450604289 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9E7AC2321C2A53E6C9F1C129 /* Pods.debug.xcconfig */,
-				087EC4F88BF78796028D4002 /* Pods.release.xcconfig */,
+				8D659AF257285E87AE60E787 /* Pods-LessonSwift.debug.xcconfig */,
+				2A418F156E57A51AA08DEAE5 /* Pods-LessonSwift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -90,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D0EBA7F610592ABA67966FF6 /* Pods.framework */,
+				56ECFEA07E43D8A4BD7B2B08 /* Pods_LessonSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,8 +103,8 @@
 				9538560F1CBC93EC00191088 /* LessonSwiftTests */,
 				9538561A1CBC93EC00191088 /* LessonSwiftUITests */,
 				953855F91CBC93EC00191088 /* Products */,
-				3C19A7B23B71066A364A58C6 /* Pods */,
 				516A81AF14FB9371D05F17DE /* Frameworks */,
+				4B9F886C7D86175450604289 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 953856201CBC93EC00191088 /* Build configuration list for PBXNativeTarget "LessonSwift" */;
 			buildPhases = (
-				6DA5BD549DE15CDC940C7348 /* Check Pods Manifest.lock */,
+				A2A5298BA5879A1DA85A2FEF /* [CP] Check Pods Manifest.lock */,
 				953855F41CBC93EC00191088 /* Sources */,
 				953855F51CBC93EC00191088 /* Frameworks */,
 				953855F61CBC93EC00191088 /* Resources */,
-				B436CBC20B7E976CEA127820 /* Embed Pods Frameworks */,
-				431175F96FBE2D10167D845C /* Copy Pods Resources */,
+				4FE67AC1BD8F8F7906A48044 /* [CP] Embed Pods Frameworks */,
+				52F8260328F8B1C22CEF0E00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,18 +214,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = pingsheng.zhao;
 				TargetAttributes = {
 					953855F71CBC93EC00191088 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 					};
 					9538560B1CBC93EC00191088 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 						TestTargetID = 953855F71CBC93EC00191088;
 					};
 					953856161CBC93EC00191088 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 						TestTargetID = 953855F71CBC93EC00191088;
 					};
 				};
@@ -275,49 +280,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		431175F96FBE2D10167D845C /* Copy Pods Resources */ = {
+		4FE67AC1BD8F8F7906A48044 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LessonSwift/Pods-LessonSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6DA5BD549DE15CDC940C7348 /* Check Pods Manifest.lock */ = {
+		52F8260328F8B1C22CEF0E00 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LessonSwift/Pods-LessonSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B436CBC20B7E976CEA127820 /* Embed Pods Frameworks */ = {
+		A2A5298BA5879A1DA85A2FEF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,8 +394,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -434,8 +441,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -454,13 +463,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		953856211CBC93EC00191088 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E7AC2321C2A53E6C9F1C129 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 8D659AF257285E87AE60E787 /* Pods-LessonSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LessonSwift/Info.plist;
@@ -468,12 +478,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.LessonSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		953856221CBC93EC00191088 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 087EC4F88BF78796028D4002 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 2A418F156E57A51AA08DEAE5 /* Pods-LessonSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LessonSwift/Info.plist;
@@ -481,6 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.LessonSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -492,6 +504,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.LessonSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LessonSwift.app/LessonSwift";
 			};
 			name = Debug;
@@ -504,6 +517,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.LessonSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LessonSwift.app/LessonSwift";
 			};
 			name = Release;
@@ -515,6 +529,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.LessonSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LessonSwift;
 			};
 			name = Debug;
@@ -526,6 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pingsheng.zhao.LessonSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LessonSwift;
 			};
 			name = Release;

@@ -15,11 +15,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "主页";
-        tableView = UITableView.init(frame: CGRectZero, style: .Plain)
+        tableView = UITableView.init(frame: CGRect.zero, style: .plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 44
-        tableView.tableFooterView = UIView.init(frame: CGRectZero)
+        tableView.tableFooterView = UIView.init(frame: CGRect.zero)
         view.addSubview(self.tableView)
        
         constrain(tableView) { tableView in
@@ -27,21 +27,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellid = "cellid"
-        var tableViewCell = tableView.dequeueReusableCellWithIdentifier(cellid)
+        var tableViewCell = tableView.dequeueReusableCell(withIdentifier: cellid)
         if (tableViewCell == nil) {
-            tableViewCell = UITableViewCell.init(style: .Default, reuseIdentifier: cellid)
+            tableViewCell = UITableViewCell.init(style: .default, reuseIdentifier: cellid)
         }
         tableViewCell?.textLabel?.text = dataArray[indexPath.row]
         return tableViewCell!
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(ViewController(), animated: true)
     }
 }
