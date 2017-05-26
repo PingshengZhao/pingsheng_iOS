@@ -28,7 +28,7 @@
      *
      *
      */
-    [[RCIM sharedRCIM] connectWithToken:@"FyEvpWavwh2ttbI7/omnkeJxv2FgAAsNM8WP+bgUj/oPyrhKrr4xvmyDrP6WPJrCHL9Sc/oo3f6jWrKgPW17pw==" success:^(NSString *userId) {
+    [[RCIM sharedRCIM] connectWithToken:@"D7JjK2wQxxzyh5Ls8x6MxFjAaje4sv+rKIsSkV62gpLd3Wi275x9KZ17Zeb8s/1HIlxLyU0klh0kximEcpDCMA==" success:^(NSString *userId) {
         NSLog(@"连接成功 ID=%@", userId);
     } error:^(RCConnectErrorCode status) {
         NSLog(@"失败%ld",(long)status);

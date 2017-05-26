@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94CAAAB7B3554EB7B0E0E92E /* libPods-PSIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0843268E3836BF52D18D7AF6 /* libPods-PSIM.a */; };
 		95B211141BABA42F00644250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211131BABA42F00644250 /* main.m */; };
 		95B211171BABA42F00644250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211161BABA42F00644250 /* AppDelegate.m */; };
 		95B2111A1BABA42F00644250 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211191BABA42F00644250 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		95B211221BABA42F00644250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B211201BABA42F00644250 /* LaunchScreen.storyboard */; };
 		95B2112D1BABA43000644250 /* PSIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B2112C1BABA43000644250 /* PSIMTests.m */; };
 		95B211381BABA43000644250 /* PSIMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B211371BABA43000644250 /* PSIMUITests.m */; };
-		DBADE4F5D50910A551A00B6A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF3D2E8F360C9045F38E32E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0120C9CA17ADC6B5840458D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		39261916E6A94BEB515E4A55 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		0843268E3836BF52D18D7AF6 /* libPods-PSIM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PSIM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		377948EE17979698676AC621 /* Pods-PSIM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIM.release.xcconfig"; path = "Pods/Target Support Files/Pods-PSIM/Pods-PSIM.release.xcconfig"; sourceTree = "<group>"; };
 		95B2110F1BABA42F00644250 /* PSIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B211131BABA42F00644250 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95B211151BABA42F00644250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		95B211331BABA43000644250 /* PSIMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSIMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B211371BABA43000644250 /* PSIMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSIMUITests.m; sourceTree = "<group>"; };
 		95B211391BABA43000644250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFF3D2E8F360C9045F38E32E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA63A95A6909AC5A3AC39704 /* Pods-PSIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSIM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PSIM/Pods-PSIM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBADE4F5D50910A551A00B6A /* libPods.a in Frameworks */,
+				94CAAAB7B3554EB7B0E0E92E /* libPods-PSIM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,14 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		804E761A00233092BCA852BD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BFF3D2E8F360C9045F38E32E /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		95B211061BABA42F00644250 = {
 			isa = PBXGroup;
 			children = (
@@ -96,8 +88,8 @@
 				95B2112B1BABA43000644250 /* PSIMTests */,
 				95B211361BABA43000644250 /* PSIMUITests */,
 				95B211101BABA42F00644250 /* Products */,
-				F3C9E3B1C6A42CFBAF6512B0 /* Pods */,
-				804E761A00233092BCA852BD /* Frameworks */,
+				C0BBC748455FA2F7403AC6B8 /* Pods */,
+				DCAA8D104F5FC640685995EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,13 +144,21 @@
 			path = PSIMUITests;
 			sourceTree = "<group>";
 		};
-		F3C9E3B1C6A42CFBAF6512B0 /* Pods */ = {
+		C0BBC748455FA2F7403AC6B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				39261916E6A94BEB515E4A55 /* Pods.debug.xcconfig */,
-				0120C9CA17ADC6B5840458D5 /* Pods.release.xcconfig */,
+				BA63A95A6909AC5A3AC39704 /* Pods-PSIM.debug.xcconfig */,
+				377948EE17979698676AC621 /* Pods-PSIM.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCAA8D104F5FC640685995EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0843268E3836BF52D18D7AF6 /* libPods-PSIM.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,12 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95B2113C1BABA43000644250 /* Build configuration list for PBXNativeTarget "PSIM" */;
 			buildPhases = (
-				38DFACBEFE7D6AFC84FE27BC /* Check Pods Manifest.lock */,
+				50A9689828D16A77C9387B9B /* [CP] Check Pods Manifest.lock */,
 				95B2110B1BABA42F00644250 /* Sources */,
 				95B2110C1BABA42F00644250 /* Frameworks */,
 				95B2110D1BABA42F00644250 /* Resources */,
-				8A2999FDBAA354A4560D4639 /* Copy Pods Resources */,
-				FA7151C0632FCA587C7257E9 /* Embed Pods Frameworks */,
+				96D27571CA5882727CD95D47 /* [CP] Embed Pods Frameworks */,
+				B7A2267A90871E7A6339DADB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,49 +289,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38DFACBEFE7D6AFC84FE27BC /* Check Pods Manifest.lock */ = {
+		50A9689828D16A77C9387B9B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8A2999FDBAA354A4560D4639 /* Copy Pods Resources */ = {
+		96D27571CA5882727CD95D47 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PSIM/Pods-PSIM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FA7151C0632FCA587C7257E9 /* Embed Pods Frameworks */ = {
+		B7A2267A90871E7A6339DADB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PSIM/Pods-PSIM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -472,7 +472,7 @@
 		};
 		95B2113D1BABA43000644250 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39261916E6A94BEB515E4A55 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BA63A95A6909AC5A3AC39704 /* Pods-PSIM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PSIM/Info.plist;
@@ -484,7 +484,7 @@
 		};
 		95B2113E1BABA43000644250 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0120C9CA17ADC6B5840458D5 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 377948EE17979698676AC621 /* Pods-PSIM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PSIM/Info.plist;
